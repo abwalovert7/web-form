@@ -1,0 +1,84 @@
+body{
+    background-color: midnightblue;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color: #ffffff1a;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px black;
+}
+.center{
+    text-align: center;
+}
+.decription{
+    font-size: 1.2rem;
+}
+fieldset{
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 20px 12px;
+    margin: 20px auto;
+}
+fieldset legend{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+label{
+    font-size: 1.2rem;
+}
+label:not(.contact-method){
+    display: block;
+    margin: 10px 0;
+}
+input:not(.contact-method-radio-btn), textarea{
+    display: block;
+    width: 95%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: #ffffff1a;
+}
+input , input::placeholder, textarea{
+    color: wheat;
+    font-size: 1.1rem;
+}
+.contact-method-radio-btn{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    vertical-align: bottom;
+
+}
+.contact-method-radio-btn::before{
+    display: block;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+    transform: translate(3px, 3px) scale(0);
+}
+.contact-method-radio-btn:checked::before{
+    transform: translate(3px, 3px) scale(1);
+    background-color: lightgreen;
+}
+.submit-btn{
+    display: block;
+    margin: auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: midnightblue;
+    font-size: 1.2rem;
+}
+.submit-btn:hover{
+    background-color: blueviolet;
+}
